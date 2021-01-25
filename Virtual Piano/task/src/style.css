@@ -1,5 +1,6 @@
+
 body {
-    background-color: darkgreen;
+    background-image: linear-gradient(lightblue, lightgreen);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +8,7 @@ body {
 }
 
 .container {
-    width: 60vh;
+    width: 70vw;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -24,4 +25,25 @@ kbd {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.black-keys {
+    width: 60vh;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 1;
+}
+
+.black-keys kbd {
+    background-color: black;
+    color: white;
+    height: 35vh;
+    width: 7vw;
+    z-index: 1;
+}
+
+kbd.hidden {
+    visibility: hidden;
 }
