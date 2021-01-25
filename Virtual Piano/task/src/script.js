@@ -1,15 +1,42 @@
-document.addEventListener("keydown", (event) => {
-    switch (event.key) {
-        case 'a':
-        case 's':
-        case 'd':
-        case 'f':
-        case 'g':
-        case 'h':
-        case 'j':
-            console.log(`The \'${event.key}\' key is pressed.`);
-        break;
-        default:
-            console.log("Not a keyboard key");
+document.addEventListener("keydown", (e) => {
+    if (e.key == 'a') {
+        new Audio('white_keys/A.mp3').play();
     }
-})
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == 's') {
+        new Audio('white_keys/S.mp3').play();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == 'd') {
+        new Audio('white_keys/D.mp3').play();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == 'f') {
+        new Audio('white_keys/F.mp3').play();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == 'g') {
+        new Audio('white_keys/G.mp3').play();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == 'h') {
+        new Audio('white_keys/H.mp3').play();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == 'j') {
+        new Audio('white_keys/J.mp3').play();
+    }
+});
+
